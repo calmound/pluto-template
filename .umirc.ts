@@ -1,7 +1,9 @@
 import { defineConfig } from '@umijs/max';
 
 export default defineConfig({
-  antd: {},
+  antd: {
+    style: 'less',
+  },
   access: {},
   model: {},
   initialState: {},
@@ -42,5 +44,7 @@ export default defineConfig({
       component: './Table',
     },
   ],
+
   npmClient: 'pnpm',
+  tailwindcss: {},
 });

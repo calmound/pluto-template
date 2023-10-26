@@ -40,9 +40,9 @@ export default function Page() {
       title: '操作',
       dataIndex: 'option',
       valueType: 'option',
-      render: (_, record) => (
+      render: () => (
         <>
-          <a>配置</a>
+          <a className="mt-16">配置</a>
           <a href="">订阅警报</a>
         </>
       ),
@@ -50,6 +50,7 @@ export default function Page() {
   ];
   return (
     <div style={{ height: '100vh' }}>
+      <div className="text-body-4">我是</div>
       <Table
         rowKey="id"
         columns={columns}
